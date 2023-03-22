@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Audio Player</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <h1 class="title">Audio Player</h1>
+    </header>
+
+    <main class="main-content-bg">
+      <h3 class="title">PlayList</h3>
+      <div class="songs-container">
+        <section id="DevotionalSection">
+          <div class="card-container">
+            <div class="card god">
+              <audio src="./lordsiva-song.mp3" id="lordSiva"></audio>
+            </div>
+
+            <div class="buttons-container">
+              <button
+                class="playButton"
+                id="playDevotional"
+                onclick="PlayDevotionlaSong()"
+              >
+                play
+              </button>
+              <button
+                class="pauseButton"
+                id="pauseDevotional"
+                onclick="pauseDevotionalSong()"
+              >
+                Pause
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="vikramSection">
+          <div class="card-container">
+            <div class="card vikram">
+              <audio src="./vikram_pablo.mp3" id="vikramSong"></audio>
+            </div>
+            <div class="buttons-container">
+              <button
+                class="playButton"
+                id="playVikram"
+                onclick="PlayVikramSong()"
+              >
+                play
+              </button>
+              <button
+                class="pauseButton"
+                id="pauseVikram"
+                onclick="pauseVikramSong()"
+              >
+                Pause
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="RRRsection">
+          <div class="card-container">
+            <div class="card rrr">
+              <audio src="./natu-natu.mp3" id="NatuNatu"></audio>
+            </div>
+            <div class="buttons-container">
+              <button class="playButton" id="playNatu" onclick="PlayNatuSong()">
+                play
+              </button>
+              <button
+                class="pauseButton"
+                id="pauseNatu"
+                onclick="pauseNatuSong()"
+              >
+                Pause
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    
+      <script src="script.js"></script>
+  </body>
+</html>
